@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+<br></br>
+</form>
+<form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+Address: <input type="text" name="fname">
+<input type="submit" value="Submit">
+<br></br>
+</form>
+<form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+phone no: <input type="text" name="fname">
+<input type="submit" value="Submit">
+<br> </br>
+</form>
+<form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+age: <input type="text" name="fname">
+<input type="submit" value="Submit">
+<br></br>
+</form>
+
+<form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+Sex: <input type="text" name="fname">
+<input type="submit" value="Submit">
+<br></br>
+</form>
+
+</body>
+<p>Enter a number and click OK:</p>
+ 
+<input id="id1" type="number" min="9" max="60" required>
+<button onclick="myfunction()">OK</button>
+
+<>if the number is less than 9 or greater than 60,an error can happend.</p>
+
+<p id="demo"></p>
+
+<script>
+function myfunction(){
+var inpobj=document.getElementbyId("id1");
+if (inpobj.checkValidity()){
+    document.getelemenByID("demo").innerHTML=innerHTML=
+    inpobj.validationMessage;
+    } else{
+         document.getElementId("demo").innerHTML="Input OK";
+         }
+         
+</form>
+
+</body>
+</html>
+
